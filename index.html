@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es" data-dark>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>REST Countries API</title>
+</head>
+<body data-dark>
+    
+    <header data-dark>
+        <section data-dark class="container-title-darkmode">
+            <h3 class="container-title-darkmode__title">Where in the world?</h3>
+            
+            <h3>By: Alx Chim</h3>
+            
+            <button data-dark id="btnDarkMode" class="container-title-darkmode__btn">🌛 Dark Mode</button>
+        </section>
+        
+        <form id="form-search" class="form-search">
+            
+            <section data-dark class="search">
+                <h3 class="search__icon">🔍</h3>
+                
+                <input data-dark type="search" name="inpSearch" class="search__input" id="" placeholder="Search for a country..." autofocus>
+            </section>
+            
+            
+            <section class="filter">
+                
+                <div class="filter__container-title-icon">
+                    <p class="filter__title">Filter by Region</p>
+                    <h2 class="filter__icon">⬇️</h2>
+                </div>
+
+                <ul data-dark class="filter__container-options">
+                    <li class="filter__option">Africa</li>
+                    <li class="filter__option">America</li>
+                    <li class="filter__option">Asia</li>
+                    <li class="filter__option">Europe</li>
+                    <li class="filter__option">Oceania</li>
+                </ul>
+                
+            </section>            
+        </form>
+    </header>
+    
+    <main  class="container-cards">
+        
+        
+    </main>
+    <button data-dark class="btn__up">☝️</button>
+
+    <template id="template-card">
+        <article class="card">
+            <div class="card__container-flag">
+
+                <img src="" class="card__flag">
+            </div>
+    
+            <div  class="card__info">
+                <h2 class="card__name-country"></h2>
+    
+                <p class="card__label" >Population:</p> 
+                <span class="card__date-population"></span>
+                <br>
+                <p class="card__label" >Region:</p> 
+                <span class="card__date-region"></span>
+                <br>
+                <p class="card__label" >Capital:</p> 
+                <span class="card__date-capital"></span>
+                
+            </div>
+
+            <div class="card__layer"></div>
+        </article>
+    </template>
+
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
